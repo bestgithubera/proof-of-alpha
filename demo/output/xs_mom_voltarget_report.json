@@ -1,0 +1,138 @@
+{
+  "name": "xs_mom_voltarget",
+  "hypothesis": "Cross-sectional momentum among BNB-ecosystem tokens persists via attention/flow autocorrelation; a ~40%-annual-vol target delevers in turbulence to cap crash beta. Refuted if the managed book does not stay positive out-of-sample after cost stress and trial deflation.",
+  "headline": {
+    "sharpe_ann": 1.3601898187493662,
+    "cagr": 0.6395671759408286,
+    "max_drawdown": -0.3654600616063983,
+    "n_obs": 1095,
+    "years": 3.0,
+    "best_variant": "xs_mom_voltarget__window=14_k=3",
+    "grid_size": 20
+  },
+  "dsr_block": {
+    "n_trials_cumulative": 40,
+    "psr": 0.9927059500812185,
+    "dsr": 0.5998527836002059,
+    "sr0_ann": 1.219313897227933,
+    "pass": false
+  },
+  "alt_block": {
+    "t_adj": 2.4424462975610606,
+    "hlz_hurdle": 3.0,
+    "pass_fdr": false,
+    "effective_n": 1.3626212187201512,
+    "dsr_eff": 0.9727405631652509,
+    "sr0_eff_ann": 0.2894499372358714,
+    "pass_eff_dsr": true,
+    "posterior_mean_sr": 0.8839216350560973,
+    "posterior_p_gt_0": 0.9912452051930877,
+    "pass_bayes": true,
+    "n_lenses_pass": 2,
+    "verdict": "DEFENSIBLE"
+  },
+  "null_block": {
+    "sharpe": 1.3601898187493662,
+    "se": 0.567124228680253,
+    "ci": [
+      0.19930197570707728,
+      2.4588211975618806
+    ],
+    "p_le_zero": 0.006
+  },
+  "selection_block": {
+    "pbo": 0.3611111111111111,
+    "cpcv_oos_sharpe_mean": 0.8736836353772814,
+    "cpcv_oos_p5": -0.23669855555713887,
+    "cpcv_selection_haircut": 0.6523122776026193,
+    "minbtl_years": 2.5910930871118603,
+    "years_available": 3.0,
+    "minbtl_ok": true
+  },
+  "cost_block": {
+    "sharpe_1x": 1.3601898187493662,
+    "sharpe_2x": 1.262823186230022,
+    "sharpe_4x": 1.0674796878240658,
+    "survives_2x": true
+  },
+  "capacity_block": {
+    "aum_usd": [
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "net_ann_return": [
+      0.5255319130397027,
+      0.3694976414053653,
+      -0.12392605000454471,
+      -1.6842687663479192,
+      -6.618505680447019
+    ],
+    "impact_drag": [
+      0.07216199589380529,
+      0.22819626752814276,
+      0.7216199589380528,
+      2.2819626752814273,
+      7.216199589380527
+    ],
+    "participation": [
+      0.0006682298911334218,
+      0.006682298911334219,
+      0.06682298911334218,
+      0.6682298911334219,
+      6.682298911334217
+    ],
+    "capacity_usd": 100000.0,
+    "net_at_smallest": 0.5255319130397027,
+    "capacity_thresh": 0.26276595651985135,
+    "median_adv_usd": 2677904.5336905,
+    "ann_turnover": 27.91551133821371
+  },
+  "regime_block": {
+    "stability": {
+      "subperiod_sharpe": [
+        0.0,
+        1.4,
+        1.04,
+        -0.19,
+        1.4,
+        3.54
+      ],
+      "mean": 1.1989930621458635,
+      "std": 1.3395881370873888,
+      "cv": 1.1172609578656771,
+      "worst": -0.19029258308667632,
+      "best": 3.543877266909925,
+      "frac_above_min": 0.6666666666666666,
+      "stable": false
+    },
+    "decay": {
+      "subperiod_sharpe": [
+        0.0,
+        1.4,
+        1.04,
+        -0.19,
+        1.4,
+        3.54
+      ],
+      "slope": 0.47117231660461084,
+      "first_half": 0.8132780966228288,
+      "second_half": 1.5847080276688983
+    },
+    "fng_quartile_sharpe": {
+      "fear": 2.300731298159638,
+      "mid-fear": 1.250896304346748,
+      "mid-greed": 1.0472439744984747,
+      "greed": 0.7810551739705754
+    }
+  },
+  "verdict": "FAIL",
+  "reasons": [
+    "fails the effective-N selection gate (PBO <= 0.35)",
+    "effective-N DSR 0.97 at effN 1.4; CPCV OOS mean 0.87; PBO 0.36",
+    "conservative nominal-N lens (assumes independent trials): DSR 0.60 vs 0.95 at N=40 \u2014 a lower bound for a correlated universe, not the verdict"
+  ],
+  "alt_verdict": "DEFENSIBLE"
+}

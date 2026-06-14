@@ -1,0 +1,138 @@
+{
+  "name": "momentum_rsi_macd_fng",
+  "hypothesis": "A long book that ENTERS tokens when MACD turns up (histogram > 0) and the market is not greedy (Fear & Greed <= 65), and EXITS on RSI overbought (> 70) or MACD rolling over, harvests trend while sidestepping late-greed reversals. Refuted if it does not beat buy-and-hold net of costs after trial deflation.",
+  "headline": {
+    "sharpe_ann": 0.6490462117212141,
+    "cagr": 0.23906888547625837,
+    "max_drawdown": -0.5720384356320656,
+    "n_obs": 1095,
+    "years": 3.0,
+    "best_variant": "momentum_rsi_macd_fng__window=21_value=80_value=75",
+    "grid_size": 18
+  },
+  "dsr_block": {
+    "n_trials_cumulative": 58,
+    "psr": 0.8737302496512047,
+    "dsr": 0.11733362558507876,
+    "sr0_ann": 1.3231755129134222,
+    "pass": false
+  },
+  "alt_block": {
+    "t_adj": 1.144202900059373,
+    "hlz_hurdle": 3.0,
+    "pass_fdr": false,
+    "effective_n": 1.2884855426032367,
+    "dsr_eff": 0.7338331490284145,
+    "sr0_eff_ann": 0.2948299092841576,
+    "pass_eff_dsr": false,
+    "posterior_mean_sr": 0.5651688130630385,
+    "posterior_p_gt_0": 0.9340648396091661,
+    "pass_bayes": false,
+    "n_lenses_pass": 0,
+    "verdict": "FAIL"
+  },
+  "null_block": {
+    "sharpe": 0.6490462117212141,
+    "se": 0.5311774363203509,
+    "ci": [
+      -0.37945417583589425,
+      1.6760571292347843
+    ],
+    "p_le_zero": 0.114
+  },
+  "selection_block": {
+    "pbo": 0.27380952380952384,
+    "cpcv_oos_sharpe_mean": 0.36290127755958596,
+    "cpcv_oos_p5": -0.6290523625515971,
+    "cpcv_selection_haircut": 0.3899898266320541,
+    "minbtl_years": 12.916311815492705,
+    "years_available": 3.0,
+    "minbtl_ok": false
+  },
+  "cost_block": {
+    "sharpe_1x": 0.6490462117212141,
+    "sharpe_2x": 0.3976119914723369,
+    "sharpe_4x": -0.1075651914090066,
+    "survives_2x": true
+  },
+  "capacity_block": {
+    "aum_usd": [
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "net_ann_return": [
+      -0.4136382260948057,
+      -1.4356953256057774,
+      -4.667723658805811,
+      -14.888294653915525,
+      -47.20857798591587
+    ],
+    "impact_drag": [
+      0.47267615919011174,
+      1.4947332587010833,
+      4.726761591901117,
+      14.94733258701083,
+      47.26761591901118
+    ],
+    "participation": [
+      0.0015510134220084796,
+      0.015510134220084798,
+      0.15510134220084798,
+      1.55101342200848,
+      15.5101342200848
+    ],
+    "capacity_usd": 0.0,
+    "net_at_smallest": -0.4136382260948057,
+    "capacity_thresh": 0.0,
+    "median_adv_usd": 2976233.6035755,
+    "ann_turnover": 120.02063492063492
+  },
+  "regime_block": {
+    "stability": {
+      "subperiod_sharpe": [
+        0.0,
+        1.01,
+        1.33,
+        0.04,
+        1.1,
+        0.09
+      ],
+      "mean": 0.594770583261787,
+      "std": 0.6148388802241262,
+      "cv": 1.0337412399454635,
+      "worst": 0.0,
+      "best": 1.3332135223051593,
+      "frac_above_min": 0.8333333333333334,
+      "stable": true
+    },
+    "decay": {
+      "subperiod_sharpe": [
+        0.0,
+        1.01,
+        1.33,
+        0.04,
+        1.1,
+        0.09
+      ],
+      "slope": -0.01690617881320995,
+      "first_half": 0.781725386906163,
+      "second_half": 0.4078157796174109
+    },
+    "fng_quartile_sharpe": {
+      "fear": 1.0282933936102407,
+      "mid-fear": 0.007728891468755353,
+      "mid-greed": 0.34933752563069237,
+      "greed": 1.17771433004648
+    }
+  },
+  "verdict": "FAIL",
+  "reasons": [
+    "fails the effective-N selection gate (effective-N DSR >= 0.90; CPCV OOS mean > 0.5 & p5 >= -0.25; 2x-cost Sharpe > 0.5; bootstrap p(Sharpe<=0) <= 0.05)",
+    "effective-N DSR 0.73 at effN 1.3; CPCV OOS mean 0.36; PBO 0.27",
+    "conservative nominal-N lens (assumes independent trials): DSR 0.12 vs 0.95 at N=58 \u2014 a lower bound for a correlated universe, not the verdict"
+  ],
+  "alt_verdict": "FAIL"
+}

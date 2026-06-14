@@ -1,0 +1,138 @@
+{
+  "name": "funding_carry",
+  "hypothesis": "Perp funding paid by levered longs is a persistent risk premium: a hedged short-perp/long-spot book on the highest-funding names earns it net of double-leg costs; refuted if net Sharpe dies under deflation or cost stress.",
+  "headline": {
+    "sharpe_ann": 0.8300152077034003,
+    "cagr": 0.013586424423071897,
+    "max_drawdown": -0.04095387344620549,
+    "n_obs": 1095,
+    "years": 3.0,
+    "best_variant": "funding_carry__window=14_k=8_min_funding_daily=0.0",
+    "grid_size": 18
+  },
+  "dsr_block": {
+    "n_trials_cumulative": 38,
+    "psr": 0.9124509336119635,
+    "dsr": 0.2080705293861898,
+    "sr0_ann": 1.3277380846882876,
+    "pass": false
+  },
+  "alt_block": {
+    "t_adj": 1.3560032538166082,
+    "hlz_hurdle": 3.0,
+    "pass_fdr": false,
+    "effective_n": 1.4211226270155213,
+    "dsr_eff": 0.7984922745041277,
+    "sr0_eff_ann": 0.3181443988602364,
+    "pass_eff_dsr": false,
+    "posterior_mean_sr": 0.6320755061555231,
+    "posterior_p_gt_0": 0.9486916494635879,
+    "pass_bayes": false,
+    "n_lenses_pass": 0,
+    "verdict": "FAIL"
+  },
+  "null_block": {
+    "sharpe": 0.8300152077034003,
+    "se": 0.8047264728885675,
+    "ci": [
+      -0.5661128884279261,
+      2.488113512917923
+    ],
+    "p_le_zero": 0.154
+  },
+  "selection_block": {
+    "pbo": 0.0,
+    "cpcv_oos_sharpe_mean": 0.7716376195148358,
+    "cpcv_oos_p5": -2.0387845744692026,
+    "cpcv_selection_haircut": 0.2824193835751254,
+    "minbtl_years": 6.8297072746784,
+    "years_available": 3.0,
+    "minbtl_ok": false
+  },
+  "cost_block": {
+    "sharpe_1x": 0.8300152077034003,
+    "sharpe_2x": -2.3253903448828948,
+    "sharpe_4x": -4.07475963006476,
+    "survives_2x": false
+  },
+  "capacity_block": {
+    "aum_usd": [
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "net_ann_return": [
+      -0.06569008304236434,
+      -0.14926537416670843,
+      -0.41355365023129054,
+      -1.2493065614747318,
+      -3.892189322120552
+    ],
+    "impact_drag": [
+      0.03865150746543625,
+      0.12222679858978033,
+      0.3865150746543624,
+      1.2222679858978038,
+      3.865150746543624
+    ],
+    "participation": [
+      0.00020367074104283737,
+      0.0020367074104283736,
+      0.020367074104283737,
+      0.2036707410428374,
+      2.0367074104283738
+    ],
+    "capacity_usd": 0.0,
+    "net_at_smallest": -0.06569008304236434,
+    "capacity_thresh": 0.0,
+    "median_adv_usd": 3196539.98082,
+    "ann_turnover": 27.083333333333332
+  },
+  "regime_block": {
+    "stability": {
+      "subperiod_sharpe": [
+        0.0,
+        6.45,
+        -1.52,
+        -1.86,
+        0.73,
+        0.27
+      ],
+      "mean": 0.6779218778844106,
+      "std": 3.008534987968146,
+      "cv": 4.43787859060822,
+      "worst": -1.862311173396243,
+      "best": 6.451631064757474,
+      "frac_above_min": 0.5,
+      "stable": false
+    },
+    "decay": {
+      "subperiod_sharpe": [
+        0.0,
+        6.45,
+        -1.52,
+        -1.86,
+        0.73,
+        0.27
+      ],
+      "slope": -0.4617441461188275,
+      "first_half": 1.643391275934408,
+      "second_half": -0.28754752016558677
+    },
+    "fng_quartile_sharpe": {
+      "fear": -1.2340249741018727,
+      "mid-fear": -0.09572191427836911,
+      "mid-greed": -1.7102437666074568,
+      "greed": 5.627821821249629
+    }
+  },
+  "verdict": "FAIL",
+  "reasons": [
+    "DSR 0.21 < 0.95 at cumulative N=38 (selection bar sr0=1.33 ann)",
+    "edge dies at 2x costs",
+    "history 3.0y < MinBTL 6.8y for N=38"
+  ],
+  "alt_verdict": "FAIL"
+}

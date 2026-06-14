@@ -1,0 +1,35 @@
+{
+  "name": "overfit_bait__seed=273",
+  "hypothesis": "NONE — this is deliberately the best of many random portfolios on a short window. It exists to show that a clean engine plus a great in-sample Sharpe proves nothing; the gate must kill it.",
+  "signals": [
+    {
+      "id": "lucky",
+      "fn": "random_score",
+      "args": {
+        "seed": 273
+      }
+    }
+  ],
+  "portfolio": {
+    "type": "xs_topk",
+    "score": "lucky",
+    "k": 3,
+    "direction": "long",
+    "rebalance": "W-MON"
+  },
+  "universe": {
+    "filter": "tradeable",
+    "min_history_days": 200
+  },
+  "bar": "1d",
+  "costs": {
+    "fee_bps": 10.0,
+    "slippage_bps": 5.0
+  },
+  "params_grid": {},
+  "falsification": {
+    "min_dsr": 0.95,
+    "n_trials_policy": "cumulative_ledger"
+  },
+  "version": 1
+}

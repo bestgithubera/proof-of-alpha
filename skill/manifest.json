@@ -1,0 +1,26 @@
+{
+  "uniqueName": "proof_of_alpha",
+  "skillDescription": "Turns CoinMarketCap market data (prices, perp funding / derivatives positioning, Fear & Greed) into a backtestable crypto trading strategy spec — Quantopian-style strategy generation authored as an LLM Skill. Supports cross-sectional ranking books and threshold entry/exit-rule strategies (e.g. momentum blended with RSI, MACD and Fear & Greed). The runner returns an evidence pack: the strategy spec (JSON), headline performance net of costs (Sharpe/CAGR/MDD), and a credibility grade from an effective-N tiered gate (STRONG / DEFENSIBLE / FAIL) calibrated for a small, highly correlated crypto universe — deflated Sharpe on the correlation-adjusted effective number of trials, CPCV out-of-sample distribution, PBO selection overfitting, block-bootstrap luck null, 2x/4x cost stress, capacity from real ADV, and Fear&Greed regime splits (nominal-N deflation kept as a conservative lens). The Cloud Agent presents the generated strategy with its grade and a live CMC regime read, so you get a strategy you can actually paper-trade plus an honest measure of how much to trust it.",
+  "resultType": "evidence_pack",
+  "domain": "research",
+  "inputSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "family": {
+        "type": "string",
+        "enum": ["xs_momentum", "xs_mom_voltarget", "funding_carry", "fng_regime", "sentiment_divergence", "momentum_rsi_macd_fng", "funding_regime_switch", "overfit_bait"],
+        "description": "Built-in strategy to generate and grade. xs_momentum (headline cross-sectional momentum), xs_mom_voltarget (vol-managed variant), momentum_rsi_macd_fng (RSI+MACD+Fear&Greed entry/exit rules), funding_regime_switch (derivatives-positioning regime), sentiment_divergence, funding_carry, fng_regime, and overfit_bait (the villain that shows why in-sample Sharpe alone proves nothing)."
+      },
+      "spec": {
+        "type": "object",
+        "description": "Alternatively, a full strategy spec per docs/spec-format.md (hypothesis, signals, portfolio, costs, params_grid). Portfolio types: xs_topk (with optional vol_target / regime_gate), funding_carry, entry_exit (threshold rules)."
+      },
+      "min_dsr": {
+        "type": "number",
+        "default": 0.95,
+        "description": "Threshold for the conservative nominal-N deflated-Sharpe LENS shown in the report; the verdict itself uses the effective-N tiered gate, not this."
+      }
+    }
+  }
+}

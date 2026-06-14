@@ -1,0 +1,47 @@
+{
+  "total_trials": 503,
+  "entries": [
+    {
+      "label": "xs_momentum",
+      "n_trials": 20,
+      "hypothesis": "Cross-sectional 14-120d momentum persists among BNB-ecosystem tokens because attention, listing and flow shocks are autocorrelated; refuted if the edge does not survive cost stress and trial deflation.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-13 07:01 UTC"
+    },
+    {
+      "label": "xs_mom_voltarget",
+      "n_trials": 20,
+      "hypothesis": "Cross-sectional momentum among BNB-ecosystem tokens persists via attention/flow autocorrelation; a ~40%-annual-vol target delevers in turbulence to cap crash beta. Refuted if the managed book does not stay positive out-of-sample after cost stress and trial deflation.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-13 07:02 UTC"
+    },
+    {
+      "label": "momentum_rsi_macd_fng",
+      "n_trials": 18,
+      "hypothesis": "A long book that ENTERS tokens when MACD turns up (histogram > 0) and the market is not greedy (Fear & Greed <= 65), and EXITS on RSI overbought (> 70) or MACD rolling over, harvests trend while sidestepping late-greed reversals. Refuted if it does not beat buy-and-hold net of costs after trial deflation.",
+      "mechanism": "entry_exit",
+      "stamp": "2026-06-13 07:02 UTC"
+    },
+    {
+      "label": "sentiment_divergence",
+      "n_trials": 27,
+      "hypothesis": "Cross-sectional momentum pays in FEAR (genuine accumulation against the crowd) but reverses in GREED (late chasers unwind); a book that plays momentum in fear and goes contrarian in greed earns the divergence. Refuted if it does not beat plain momentum after cost stress and trial deflation.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-13 07:02 UTC"
+    },
+    {
+      "label": "funding_regime_switch",
+      "n_trials": 18,
+      "hypothesis": "Aggregate perp funding measures crowd leverage/positioning: when market-wide funding is rich (longs crowded) the tape is froth-prone, so stand aside; run cross-sectional momentum only when funding is neutral/negative. Refuted if the funding-gated book does not beat the ungated one after deflation.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-13 07:02 UTC"
+    },
+    {
+      "label": "overfit_bait",
+      "n_trials": 400,
+      "hypothesis": "NONE \u2014 this is deliberately the best of many random portfolios on a short window. It exists to show that a clean engine plus a great in-sample Sharpe proves nothing; the gate must kill it.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-13 07:02 UTC"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "fng_regime_momentum__window=30_k=5_min=15",
+  "hypothesis": "Momentum among BNB-ecosystem tokens pays only in non-fear regimes; gating the book on the Fear & Greed index avoids crash beta. Refuted if the gated book does not beat the ungated one after deflation for the threshold search.",
+  "signals": [
+    {
+      "id": "mom",
+      "fn": "ts_momentum",
+      "args": {
+        "window": 30
+      }
+    },
+    {
+      "id": "fng",
+      "fn": "fear_greed",
+      "args": {}
+    }
+  ],
+  "portfolio": {
+    "type": "xs_topk",
+    "score": "mom",
+    "k": 5,
+    "direction": "long",
+    "rebalance": "W-MON",
+    "regime_gate": {
+      "signal": "fng",
+      "min": 15,
+      "max": 100
+    }
+  },
+  "universe": {
+    "filter": "tradeable",
+    "min_history_days": 200
+  },
+  "bar": "1d",
+  "costs": {
+    "fee_bps": 10.0,
+    "slippage_bps": 5.0
+  },
+  "params_grid": {},
+  "falsification": {
+    "min_dsr": 0.95,
+    "n_trials_policy": "cumulative_ledger"
+  },
+  "version": 1
+}

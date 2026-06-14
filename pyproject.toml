@@ -1,0 +1,30 @@
+[project]
+name = "proof-of-alpha"
+version = "0.1.0"
+description = "Falsification-first crypto strategy skill"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scipy>=1.11",
+  "requests>=2.31",
+  "pyarrow>=14",
+  "python-dotenv>=1.0",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.4"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["validation", "backtest", "strategies", "data_layer"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

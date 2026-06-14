@@ -1,0 +1,76 @@
+{
+  "name": "momentum_rsi_macd_fng__window=21_value=80_value=75",
+  "hypothesis": "A long book that ENTERS tokens when MACD turns up (histogram > 0) and the market is not greedy (Fear & Greed <= 65), and EXITS on RSI overbought (> 70) or MACD rolling over, harvests trend while sidestepping late-greed reversals. Refuted if it does not beat buy-and-hold net of costs after trial deflation.",
+  "signals": [
+    {
+      "id": "macd",
+      "fn": "macd",
+      "args": {
+        "fast": 12,
+        "slow": 26,
+        "signal": 9
+      }
+    },
+    {
+      "id": "rsi",
+      "fn": "rsi",
+      "args": {
+        "window": 21
+      }
+    },
+    {
+      "id": "fng",
+      "fn": "fear_greed",
+      "args": {}
+    }
+  ],
+  "portfolio": {
+    "type": "entry_exit",
+    "entry": {
+      "all": [
+        {
+          "signal": "macd",
+          "op": ">",
+          "value": 0.0
+        },
+        {
+          "signal": "fng",
+          "op": "<=",
+          "value": 75
+        }
+      ]
+    },
+    "exit": {
+      "any": [
+        {
+          "signal": "rsi",
+          "op": ">",
+          "value": 80
+        },
+        {
+          "signal": "macd",
+          "op": "<",
+          "value": 0.0
+        }
+      ]
+    },
+    "sizing": "equal",
+    "max_positions": 8,
+    "rebalance": "1d"
+  },
+  "universe": {
+    "filter": "tradeable",
+    "min_history_days": 200
+  },
+  "bar": "1d",
+  "costs": {
+    "fee_bps": 10.0,
+    "slippage_bps": 5.0
+  },
+  "params_grid": {},
+  "falsification": {
+    "min_dsr": 0.95,
+    "n_trials_policy": "cumulative_ledger"
+  },
+  "version": 1
+}

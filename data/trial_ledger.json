@@ -1,0 +1,89 @@
+{
+  "total_trials": 1010,
+  "entries": [
+    {
+      "label": "xs_momentum",
+      "n_trials": 20,
+      "hypothesis": "Cross-sectional 14-120d momentum persists among BNB-ecosystem tokens because attention, listing and flow shocks are autocorrelated; refuted if the edge does not survive cost stress and trial deflation.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:22 UTC"
+    },
+    {
+      "label": "funding_carry",
+      "n_trials": 18,
+      "hypothesis": "Perp funding paid by levered longs is a persistent risk premium: a hedged short-perp/long-spot book on the highest-funding names earns it net of double-leg costs; refuted if net Sharpe dies under deflation or cost stress.",
+      "mechanism": "funding_carry",
+      "stamp": "2026-06-12 21:22 UTC"
+    },
+    {
+      "label": "fng_regime_momentum",
+      "n_trials": 24,
+      "hypothesis": "Momentum among BNB-ecosystem tokens pays only in non-fear regimes; gating the book on the Fear & Greed index avoids crash beta. Refuted if the gated book does not beat the ungated one after deflation for the threshold search.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:23 UTC"
+    },
+    {
+      "label": "fng_regime_momentum",
+      "n_trials": 24,
+      "hypothesis": "Momentum among BNB-ecosystem tokens pays only in non-fear regimes; gating the book on the Fear & Greed index avoids crash beta. Refuted if the gated book does not beat the ungated one after deflation for the threshold search.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:24 UTC"
+    },
+    {
+      "label": "xs_momentum",
+      "n_trials": 20,
+      "hypothesis": "Cross-sectional 14-120d momentum persists among BNB-ecosystem tokens because attention, listing and flow shocks are autocorrelated; refuted if the edge does not survive cost stress and trial deflation.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:24 UTC"
+    },
+    {
+      "label": "funding_carry",
+      "n_trials": 18,
+      "hypothesis": "Perp funding paid by levered longs is a persistent risk premium: a hedged short-perp/long-spot book on the highest-funding names earns it net of double-leg costs; refuted if net Sharpe dies under deflation or cost stress.",
+      "mechanism": "funding_carry",
+      "stamp": "2026-06-12 21:25 UTC"
+    },
+    {
+      "label": "overfit_bait",
+      "n_trials": 400,
+      "hypothesis": "NONE \u2014 this is deliberately the best of many random portfolios on a short window. It exists to show that a clean engine plus a great in-sample Sharpe proves nothing; the gate must kill it.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:25 UTC"
+    },
+    {
+      "label": "fng_regime_momentum",
+      "n_trials": 24,
+      "hypothesis": "Momentum among BNB-ecosystem tokens pays only in non-fear regimes; gating the book on the Fear & Greed index avoids crash beta. Refuted if the gated book does not beat the ungated one after deflation for the threshold search.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:26 UTC"
+    },
+    {
+      "label": "xs_momentum",
+      "n_trials": 20,
+      "hypothesis": "Cross-sectional 14-120d momentum persists among BNB-ecosystem tokens because attention, listing and flow shocks are autocorrelated; refuted if the edge does not survive cost stress and trial deflation.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:27 UTC"
+    },
+    {
+      "label": "funding_carry",
+      "n_trials": 18,
+      "hypothesis": "Perp funding paid by levered longs is a persistent risk premium: a hedged short-perp/long-spot book on the highest-funding names earns it net of double-leg costs; refuted if net Sharpe dies under deflation or cost stress.",
+      "mechanism": "funding_carry",
+      "stamp": "2026-06-12 21:27 UTC"
+    },
+    {
+      "label": "fng_regime_momentum",
+      "n_trials": 24,
+      "hypothesis": "Momentum among BNB-ecosystem tokens pays only in non-fear regimes; gating the book on the Fear & Greed index avoids crash beta. Refuted if the gated book does not beat the ungated one after deflation for the threshold search.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:28 UTC"
+    },
+    {
+      "label": "overfit_bait",
+      "n_trials": 400,
+      "hypothesis": "NONE \u2014 this is deliberately the best of many random portfolios on a short window. It exists to show that a clean engine plus a great in-sample Sharpe proves nothing; the gate must kill it.",
+      "mechanism": "xs_topk",
+      "stamp": "2026-06-12 21:28 UTC"
+    }
+  ]
+}

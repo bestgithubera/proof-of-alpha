@@ -1,0 +1,35 @@
+{
+  "name": "funding_carry__window=14_k=8_min_funding_daily=0.0",
+  "hypothesis": "Perp funding paid by levered longs is a persistent risk premium: a hedged short-perp/long-spot book on the highest-funding names earns it net of double-leg costs; refuted if net Sharpe dies under deflation or cost stress.",
+  "signals": [
+    {
+      "id": "f",
+      "fn": "funding_rate",
+      "args": {
+        "window": 14
+      }
+    }
+  ],
+  "portfolio": {
+    "type": "funding_carry",
+    "score": "f",
+    "k": 8,
+    "rebalance": "W-MON",
+    "min_funding_daily": 0.0
+  },
+  "universe": {
+    "filter": "tradeable",
+    "min_history_days": 200
+  },
+  "bar": "1d",
+  "costs": {
+    "fee_bps": 10.0,
+    "slippage_bps": 5.0
+  },
+  "params_grid": {},
+  "falsification": {
+    "min_dsr": 0.95,
+    "n_trials_policy": "cumulative_ledger"
+  },
+  "version": 1
+}

@@ -1,0 +1,138 @@
+{
+  "name": "sentiment_divergence",
+  "hypothesis": "Cross-sectional momentum pays in FEAR (genuine accumulation against the crowd) but reverses in GREED (late chasers unwind); a book that plays momentum in fear and goes contrarian in greed earns the divergence. Refuted if it does not beat plain momentum after cost stress and trial deflation.",
+  "headline": {
+    "sharpe_ann": 1.0268085752580869,
+    "cagr": 0.7113646206417297,
+    "max_drawdown": -0.770357104761544,
+    "n_obs": 1095,
+    "years": 3.0,
+    "best_variant": "sentiment_divergence__price_window=14_fng_pivot=60.0_k=3",
+    "grid_size": 27
+  },
+  "dsr_block": {
+    "n_trials_cumulative": 85,
+    "psr": 0.966055775395385,
+    "dsr": 0.25877130344037236,
+    "sr0_ann": 1.3907621006506348,
+    "pass": false
+  },
+  "alt_block": {
+    "t_adj": 1.8257465408407514,
+    "hlz_hurdle": 3.0,
+    "pass_fdr": false,
+    "effective_n": 1.413709661022329,
+    "dsr_eff": 0.904222224320943,
+    "sr0_eff_ann": 0.29231288823790974,
+    "pass_eff_dsr": false,
+    "posterior_mean_sr": 0.732566388017067,
+    "posterior_p_gt_0": 0.9750271162920989,
+    "pass_bayes": true,
+    "n_lenses_pass": 1,
+    "verdict": "WEAK"
+  },
+  "null_block": {
+    "sharpe": 1.0268085752580869,
+    "se": 0.5689050259585982,
+    "ci": [
+      -0.012331095354926904,
+      2.1543252819618517
+    ],
+    "p_le_zero": 0.03
+  },
+  "selection_block": {
+    "pbo": 0.23809523809523808,
+    "cpcv_oos_sharpe_mean": 0.5235807022345829,
+    "cpcv_oos_p5": -0.6308436310557672,
+    "cpcv_selection_haircut": 0.6668184215850876,
+    "minbtl_years": 5.800009697548004,
+    "years_available": 3.0,
+    "minbtl_ok": false
+  },
+  "cost_block": {
+    "sharpe_1x": 1.0268085752580869,
+    "sharpe_2x": 0.9354647737112716,
+    "sharpe_4x": 0.7528783796195951,
+    "survives_2x": true
+  },
+  "capacity_block": {
+    "aum_usd": [
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "net_ann_return": [
+      0.41676954750489137,
+      -0.03463129877011162,
+      -1.4620861107266538,
+      -5.976094573476681,
+      -20.2506426930421
+    ],
+    "impact_drag": [
+      0.20876173980350501,
+      0.660162586078508,
+      2.08761739803505,
+      6.601625860785077,
+      20.876173980350497
+    ],
+    "participation": [
+      0.0013309825938236193,
+      0.013309825938236193,
+      0.13309825938236192,
+      1.3309825938236193,
+      13.309825938236191
+    ],
+    "capacity_usd": 10000.0,
+    "net_at_smallest": 0.41676954750489137,
+    "capacity_thresh": 0.20838477375244568,
+    "median_adv_usd": 2755927.226331,
+    "ann_turnover": 57.22222222222221
+  },
+  "regime_block": {
+    "stability": {
+      "subperiod_sharpe": [
+        0.0,
+        -0.08,
+        0.43,
+        -0.9,
+        1.81,
+        3.46
+      ],
+      "mean": 0.7855885483170323,
+      "std": 1.5818244843248088,
+      "cv": 2.0135533896383215,
+      "worst": -0.9009585163266143,
+      "best": 3.45751402893399,
+      "frac_above_min": 0.5,
+      "stable": false
+    },
+    "decay": {
+      "subperiod_sharpe": [
+        0.0,
+        -0.08,
+        0.43,
+        -0.9,
+        1.81,
+        3.46
+      ],
+      "slope": 0.6172020211540997,
+      "first_half": 0.11713410441527283,
+      "second_half": 1.4540429922187919
+    },
+    "fng_quartile_sharpe": {
+      "fear": 1.9765674187229838,
+      "mid-fear": 1.5542653245051452,
+      "mid-greed": 0.6631355352925142,
+      "greed": -0.7067603819205756
+    }
+  },
+  "verdict": "FAIL",
+  "reasons": [
+    "fails the effective-N selection gate (CPCV OOS mean > 0.5 & p5 >= -0.25)",
+    "effective-N DSR 0.90 at effN 1.4; CPCV OOS mean 0.52; PBO 0.24",
+    "conservative nominal-N lens (assumes independent trials): DSR 0.26 vs 0.95 at N=85 \u2014 a lower bound for a correlated universe, not the verdict"
+  ],
+  "alt_verdict": "WEAK"
+}

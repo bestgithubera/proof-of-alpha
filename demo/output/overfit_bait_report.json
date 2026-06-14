@@ -1,0 +1,138 @@
+{
+  "name": "overfit_bait",
+  "hypothesis": "NONE \u2014 this is deliberately the best of many random portfolios on a short window. It exists to show that a clean engine plus a great in-sample Sharpe proves nothing; the gate must kill it.",
+  "headline": {
+    "sharpe_ann": 0.8466100137240157,
+    "cagr": 0.43130063130760754,
+    "max_drawdown": -0.6007453342402616,
+    "n_obs": 540,
+    "years": 1.48,
+    "best_variant": "overfit_bait__seed=273",
+    "grid_size": 400
+  },
+  "dsr_block": {
+    "n_trials_cumulative": 503,
+    "psr": 0.8504901654409727,
+    "dsr": 0.021911101086821046,
+    "sr0_ann": 2.489868065337084,
+    "pass": false
+  },
+  "alt_block": {
+    "t_adj": 1.0385379664476126,
+    "hlz_hurdle": 3.0,
+    "pass_fdr": false,
+    "effective_n": 2.3857316207257537,
+    "dsr_eff": 0.6980438311876096,
+    "sr0_eff_ann": 0.42370148552168563,
+    "pass_eff_dsr": false,
+    "posterior_mean_sr": 0.5947496776341814,
+    "posterior_p_gt_0": 0.918555354846448,
+    "pass_bayes": false,
+    "n_lenses_pass": 0,
+    "verdict": "FAIL"
+  },
+  "null_block": {
+    "sharpe": 0.8466100137240157,
+    "se": 0.8228637097057534,
+    "ci": [
+      -0.6914784205241263,
+      2.4824926613808755
+    ],
+    "p_le_zero": 0.136
+  },
+  "selection_block": {
+    "pbo": 0.49603174603174605,
+    "cpcv_oos_sharpe_mean": -0.6289906433779127,
+    "cpcv_oos_p5": -2.046823145403526,
+    "cpcv_selection_haircut": 2.260906629111597,
+    "minbtl_years": 13.015588870161636,
+    "years_available": 1.4794520547945205,
+    "minbtl_ok": false
+  },
+  "cost_block": {
+    "sharpe_1x": 0.8466100137240157,
+    "sharpe_2x": 0.2466216260476525,
+    "sharpe_4x": -0.1464148044971087,
+    "survives_2x": true
+  },
+  "capacity_block": {
+    "aum_usd": [
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "net_ann_return": [
+      -0.03891046457369296,
+      -0.7885961217303259,
+      -3.159310327505398,
+      -10.656166899071726,
+      -34.36330895682244
+    ],
+    "impact_drag": [
+      0.3467110958813005,
+      1.0963967530379335,
+      3.4671109588130054,
+      10.963967530379334,
+      34.67110958813005
+    ],
+    "participation": [
+      0.0017733076366846054,
+      0.017733076366846057,
+      0.17733076366846057,
+      1.7733076366846057,
+      17.733076366846056
+    ],
+    "capacity_usd": 0.0,
+    "net_at_smallest": -0.03891046457369296,
+    "capacity_thresh": 0.0,
+    "median_adv_usd": 2976233.6035755,
+    "ann_turnover": 82.33333333333333
+  },
+  "regime_block": {
+    "stability": {
+      "subperiod_sharpe": [
+        -0.91,
+        2.09,
+        1.76,
+        -0.59,
+        0.62,
+        2.76
+      ],
+      "mean": 0.9538898737517707,
+      "std": 1.4928518895371325,
+      "cv": 1.5650149253241943,
+      "worst": -0.9109002474544541,
+      "best": 2.755106793444363,
+      "frac_above_min": 0.6666666666666666,
+      "stable": false
+    },
+    "decay": {
+      "subperiod_sharpe": [
+        -0.91,
+        2.09,
+        1.76,
+        -0.59,
+        0.62,
+        2.76
+      ],
+      "slope": 0.3310429937139114,
+      "first_half": 0.9782206770333229,
+      "second_half": 0.9295590704702185
+    },
+    "fng_quartile_sharpe": {
+      "fear": 0.6642646977222701,
+      "mid-fear": 0.6730500437567827,
+      "mid-greed": 0.24023136526788025,
+      "greed": 1.7803594139932764
+    }
+  },
+  "verdict": "FAIL",
+  "reasons": [
+    "fails the effective-N selection gate (effective-N DSR >= 0.90; CPCV OOS mean > 0.5 & p5 >= -0.25; PBO <= 0.35; 2x-cost Sharpe > 0.5; bootstrap p(Sharpe<=0) <= 0.05)",
+    "effective-N DSR 0.70 at effN 2.4; CPCV OOS mean -0.63; PBO 0.50",
+    "conservative nominal-N lens (assumes independent trials): DSR 0.02 vs 0.95 at N=503 \u2014 a lower bound for a correlated universe, not the verdict"
+  ],
+  "alt_verdict": "FAIL"
+}

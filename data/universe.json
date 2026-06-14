@@ -1,0 +1,1038 @@
+[
+  {
+    "symbol": "ETH",
+    "binance_spot": "ETHUSDT",
+    "binance_perp": "ETHUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "USDT",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "USDC",
+    "binance_spot": "USDCUSDT",
+    "binance_perp": "USDCUSDT",
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "XRP",
+    "binance_spot": "XRPUSDT",
+    "binance_perp": "XRPUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "TRX",
+    "binance_spot": "TRXUSDT",
+    "binance_perp": "TRXUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "DOGE",
+    "binance_spot": "DOGEUSDT",
+    "binance_perp": "DOGEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "ZEC",
+    "binance_spot": "ZECUSDT",
+    "binance_perp": "ZECUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "ADA",
+    "binance_spot": "ADAUSDT",
+    "binance_perp": "ADAUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "LINK",
+    "binance_spot": "LINKUSDT",
+    "binance_perp": "LINKUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "BCH",
+    "binance_spot": "BCHUSDT",
+    "binance_perp": "BCHUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "DAI",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "TON",
+    "binance_spot": "TONUSDT",
+    "binance_perp": "TONUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "USD1",
+    "binance_spot": "USD1USDT",
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "USDe",
+    "binance_spot": "USDEUSDT",
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "M",
+    "binance_spot": null,
+    "binance_perp": "MUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "LTC",
+    "binance_spot": "LTCUSDT",
+    "binance_perp": "LTCUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "AVAX",
+    "binance_spot": "AVAXUSDT",
+    "binance_perp": "AVAXUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "SHIB",
+    "binance_spot": "SHIBUSDT",
+    "binance_perp": "1000SHIBUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "XAUt",
+    "binance_spot": "XAUTUSDT",
+    "binance_perp": "XAUTUSDT",
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "WLFI",
+    "binance_spot": "WLFIUSDT",
+    "binance_perp": "WLFIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "H",
+    "binance_spot": null,
+    "binance_perp": "HUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "DOT",
+    "binance_spot": "DOTUSDT",
+    "binance_perp": "DOTUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "UNI",
+    "binance_spot": "UNIUSDT",
+    "binance_perp": "UNIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "ASTER",
+    "binance_spot": "ASTERUSDT",
+    "binance_perp": "ASTERUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "DEXE",
+    "binance_spot": "DEXEUSDT",
+    "binance_perp": "DEXEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "USDD",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "ETC",
+    "binance_spot": "ETCUSDT",
+    "binance_perp": "ETCUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "AAVE",
+    "binance_spot": "AAVEUSDT",
+    "binance_perp": "AAVEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "ATOM",
+    "binance_spot": "ATOMUSDT",
+    "binance_perp": "ATOMUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "U",
+    "binance_spot": "UUSDT",
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "STABLE",
+    "binance_spot": null,
+    "binance_perp": "STABLEUSDT",
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "FIL",
+    "binance_spot": "FILUSDT",
+    "binance_perp": "FILUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "INJ",
+    "binance_spot": "INJUSDT",
+    "binance_perp": "INJUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "币安人生",
+    "binance_spot": "币安人生USDT",
+    "binance_perp": "币安人生USDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "NIGHT",
+    "binance_spot": "NIGHTUSDT",
+    "binance_perp": "NIGHTUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "FET",
+    "binance_spot": "FETUSDT",
+    "binance_perp": "FETUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "TUSD",
+    "binance_spot": "TUSDUSDT",
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "BONK",
+    "binance_spot": "BONKUSDT",
+    "binance_perp": "1000BONKUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "PENGU",
+    "binance_spot": "PENGUUSDT",
+    "binance_perp": "PENGUUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "CAKE",
+    "binance_spot": "CAKEUSDT",
+    "binance_perp": "CAKEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "SIREN",
+    "binance_spot": null,
+    "binance_perp": "SIRENUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "LUNC",
+    "binance_spot": "LUNCUSDT",
+    "binance_perp": "1000LUNCUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "ZRO",
+    "binance_spot": "ZROUSDT",
+    "binance_perp": "ZROUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "KITE",
+    "binance_spot": "KITEUSDT",
+    "binance_perp": "KITEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "FDUSD",
+    "binance_spot": "FDUSDUSDT",
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "BEAT",
+    "binance_spot": null,
+    "binance_perp": "BEATUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "PIEVERSE",
+    "binance_spot": null,
+    "binance_perp": "PIEVERSEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "BTT",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "NFT",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "EDGE",
+    "binance_spot": null,
+    "binance_perp": "EDGEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "FLOKI",
+    "binance_spot": "FLOKIUSDT",
+    "binance_perp": "1000FLOKIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "LDO",
+    "binance_spot": "LDOUSDT",
+    "binance_perp": "LDOUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "B",
+    "binance_spot": null,
+    "binance_perp": "BUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "FF",
+    "binance_spot": "FFUSDT",
+    "binance_perp": "FFUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "PENDLE",
+    "binance_spot": "PENDLEUSDT",
+    "binance_perp": "PENDLEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "NEX",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "STG",
+    "binance_spot": "STGUSDT",
+    "binance_perp": "STGUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "AXS",
+    "binance_spot": "AXSUSDT",
+    "binance_perp": "AXSUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "TWT",
+    "binance_spot": "TWTUSDT",
+    "binance_perp": "TWTUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "HOME",
+    "binance_spot": "HOMEUSDT",
+    "binance_perp": "HOMEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "RAY",
+    "binance_spot": "RAYUSDT",
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "COMP",
+    "binance_spot": "COMPUSDT",
+    "binance_perp": "COMPUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "GWEI",
+    "binance_spot": null,
+    "binance_perp": "GWEIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "XCN",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "GENIUS",
+    "binance_spot": "GENIUSUSDT",
+    "binance_perp": "GENIUSUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "XPL",
+    "binance_spot": "XPLUSDT",
+    "binance_perp": "XPLUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "BAT",
+    "binance_spot": "BATUSDT",
+    "binance_perp": "BATUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "SKYAI",
+    "binance_spot": null,
+    "binance_perp": "SKYAIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "APE",
+    "binance_spot": "APEUSDT",
+    "binance_perp": "APEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "IP",
+    "binance_spot": null,
+    "binance_perp": "IPUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "SFP",
+    "binance_spot": "SFPUSDT",
+    "binance_perp": "SFPUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "TAG",
+    "binance_spot": null,
+    "binance_perp": "TAGUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "NXPC",
+    "binance_spot": "NXPCUSDT",
+    "binance_perp": "NXPCUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "AB",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "SAHARA",
+    "binance_spot": "SAHARAUSDT",
+    "binance_perp": "SAHARAUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "1INCH",
+    "binance_spot": "1INCHUSDT",
+    "binance_perp": "1INCHUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "CHEEMS",
+    "binance_spot": null,
+    "binance_perp": "1000CHEEMSUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "BANANAS31",
+    "binance_spot": "BANANAS31USDT",
+    "binance_perp": "BANANAS31USDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "RIVER",
+    "binance_spot": null,
+    "binance_perp": "RIVERUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "MYX",
+    "binance_spot": null,
+    "binance_perp": "MYXUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "RAVE",
+    "binance_spot": null,
+    "binance_perp": "RAVEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "SNX",
+    "binance_spot": "SNXUSDT",
+    "binance_perp": "SNXUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "FORM",
+    "binance_spot": "FORMUSDT",
+    "binance_perp": "FORMUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "LAB",
+    "binance_spot": null,
+    "binance_perp": "LABUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "HTX",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "USDf",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "CTM",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "BDX",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "SLX",
+    "binance_spot": null,
+    "binance_perp": "SLXUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "UB",
+    "binance_spot": null,
+    "binance_perp": "UBUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "DUCKY",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "FRAX",
+    "binance_spot": "FRAXUSDT",
+    "binance_perp": "FRAXUSDT",
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "BILL",
+    "binance_spot": null,
+    "binance_perp": "BILLUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "WFI",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "KOGE",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "ALE",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "FRXUSD",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "USDF",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "GOMINING",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "VCNT",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "GUA",
+    "binance_spot": null,
+    "binance_perp": "GUAUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "DUSD",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "SMILEK",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "0G",
+    "binance_spot": "0GUSDT",
+    "binance_perp": "0GUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "BEAM",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "MY",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "SOON",
+    "binance_spot": null,
+    "binance_perp": "SOONUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "REAL",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "Q",
+    "binance_spot": null,
+    "binance_perp": "QUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "AIOZ",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "ZIG",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "YFI",
+    "binance_spot": "YFIUSDT",
+    "binance_perp": "YFIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "TAC",
+    "binance_spot": null,
+    "binance_perp": "TACUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "lisUSD",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "CYS",
+    "binance_spot": null,
+    "binance_perp": "CYSUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "ZAMA",
+    "binance_spot": "ZAMAUSDT",
+    "binance_perp": "ZAMAUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "TRIA",
+    "binance_spot": null,
+    "binance_perp": "TRIAUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "HUMA",
+    "binance_spot": "HUMAUSDT",
+    "binance_perp": "HUMAUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "PLUME",
+    "binance_spot": "PLUMEUSDT",
+    "binance_perp": "PLUMEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "ZIL",
+    "binance_spot": "ZILUSDT",
+    "binance_perp": "ZILUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "XPR",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "ZETA",
+    "binance_spot": null,
+    "binance_perp": "ZETAUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "BabyDoge",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "NILA",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "ROSE",
+    "binance_spot": "ROSEUSDT",
+    "binance_perp": "ROSEUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "VELO",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "UAI",
+    "binance_spot": null,
+    "binance_perp": "UAIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "BRETT",
+    "binance_spot": null,
+    "binance_perp": "BRETTUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "OPEN",
+    "binance_spot": "OPENUSDT",
+    "binance_perp": "OPENUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "BSB",
+    "binance_spot": null,
+    "binance_perp": "BSBUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "TOSHI",
+    "binance_spot": null,
+    "binance_perp": "TOSHIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "BAS",
+    "binance_spot": null,
+    "binance_perp": "BASUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "ACH",
+    "binance_spot": "ACHUSDT",
+    "binance_perp": "ACHUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "AXL",
+    "binance_spot": "AXLUSDT",
+    "binance_perp": "AXLUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "LUR",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "ELF",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "KAVA",
+    "binance_spot": "KAVAUSDT",
+    "binance_perp": "KAVAUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "APR",
+    "binance_spot": null,
+    "binance_perp": "APRUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "IRYS",
+    "binance_spot": null,
+    "binance_perp": "IRYSUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "EURI",
+    "binance_spot": "EURIUSDT",
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "XUSD",
+    "binance_spot": "XUSDUSDT",
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  },
+  {
+    "symbol": "BARD",
+    "binance_spot": "BARDUSDT",
+    "binance_perp": "BARDUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "DUSK",
+    "binance_spot": "DUSKUSDT",
+    "binance_perp": "DUSKUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "SUSHI",
+    "binance_spot": "SUSHIUSDT",
+    "binance_perp": "SUSHIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": true
+  },
+  {
+    "symbol": "PEAQ",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "COAI",
+    "binance_spot": null,
+    "binance_perp": "COAIUSDT",
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "BDCA",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": false,
+    "tradeable": false
+  },
+  {
+    "symbol": "XAUM",
+    "binance_spot": null,
+    "binance_perp": null,
+    "is_stable_or_pegged": true,
+    "tradeable": false
+  }
+]

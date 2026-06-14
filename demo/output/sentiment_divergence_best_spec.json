@@ -1,0 +1,36 @@
+{
+  "name": "sentiment_divergence__price_window=14_fng_pivot=60.0_k=3",
+  "hypothesis": "Cross-sectional momentum pays in FEAR (genuine accumulation against the crowd) but reverses in GREED (late chasers unwind); a book that plays momentum in fear and goes contrarian in greed earns the divergence. Refuted if it does not beat plain momentum after cost stress and trial deflation.",
+  "signals": [
+    {
+      "id": "div",
+      "fn": "fng_divergence",
+      "args": {
+        "price_window": 14,
+        "fng_pivot": 60.0
+      }
+    }
+  ],
+  "portfolio": {
+    "type": "xs_topk",
+    "score": "div",
+    "k": 3,
+    "direction": "long",
+    "rebalance": "W-MON"
+  },
+  "universe": {
+    "filter": "tradeable",
+    "min_history_days": 200
+  },
+  "bar": "1d",
+  "costs": {
+    "fee_bps": 10.0,
+    "slippage_bps": 5.0
+  },
+  "params_grid": {},
+  "falsification": {
+    "min_dsr": 0.95,
+    "n_trials_policy": "cumulative_ledger"
+  },
+  "version": 1
+}

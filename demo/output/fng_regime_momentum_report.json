@@ -1,0 +1,137 @@
+{
+  "name": "fng_regime_momentum",
+  "hypothesis": "Momentum among BNB-ecosystem tokens pays only in non-fear regimes; gating the book on the Fear & Greed index avoids crash beta. Refuted if the gated book does not beat the ungated one after deflation for the threshold search.",
+  "headline": {
+    "sharpe_ann": 0.775815620899439,
+    "cagr": 0.35713800969584764,
+    "max_drawdown": -0.6685988406737224,
+    "n_obs": 1095,
+    "years": 3.0,
+    "best_variant": "fng_regime_momentum__window=30_k=5_min=15",
+    "grid_size": 24
+  },
+  "dsr_block": {
+    "n_trials_cumulative": 62,
+    "psr": 0.9130154410249588,
+    "dsr": 0.1591345434666801,
+    "sr0_ann": 1.3453236014899832,
+    "pass": false
+  },
+  "alt_block": {
+    "t_adj": 1.3595602697817006,
+    "hlz_hurdle": 3.0,
+    "pass_fdr": false,
+    "effective_n": 1.3284578305586758,
+    "dsr_eff": 0.7994911143305828,
+    "sr0_eff_ann": 0.29659171726428596,
+    "pass_eff_dsr": false,
+    "posterior_mean_sr": 0.6197892593566098,
+    "posterior_p_gt_0": 0.9503342824101519,
+    "pass_bayes": true,
+    "n_lenses_pass": 1,
+    "verdict": "WEAK"
+  },
+  "null_block": {
+    "sharpe": 0.775815620899439,
+    "se": 0.5731318223587271,
+    "ci": [
+      -0.34624911523632057,
+      1.8372772746302002
+    ],
+    "p_le_zero": 0.082
+  },
+  "selection_block": {
+    "pbo": 0.4365079365079365,
+    "cpcv_oos_sharpe_mean": 0.3704556732643466,
+    "cpcv_oos_p5": -0.6078076554377798,
+    "cpcv_selection_haircut": 0.635534940241618,
+    "minbtl_years": 9.234563518856731,
+    "years_available": 3.0,
+    "minbtl_ok": false
+  },
+  "cost_block": {
+    "sharpe_1x": 0.775815620899439,
+    "sharpe_2x": 0.7082133706261478,
+    "sharpe_4x": 0.5729946255908202,
+    "survives_2x": true
+  },
+  "capacity_block": {
+    "aum_usd": [
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0
+    ],
+    "net_ann_return": [
+      0.2230933798113129,
+      0.049582209263503485,
+      -0.49910828914949995,
+      -2.234219994627594,
+      -7.7211249787576275
+    ],
+    "impact_drag": [
+      0.08024462988453475,
+      0.25375580043234414,
+      0.8024462988453476,
+      2.537558004323442,
+      8.024462988453475
+    ],
+    "participation": [
+      0.0005005528325665216,
+      0.0050055283256652166,
+      0.05005528325665216,
+      0.5005528325665216,
+      5.005528325665216
+    ],
+    "capacity_usd": 10000.0,
+    "net_at_smallest": 0.2230933798113129,
+    "capacity_thresh": 0.11154668990565644,
+    "median_adv_usd": 2755927.226331,
+    "ann_turnover": 35.86666666666667
+  },
+  "regime_block": {
+    "stability": {
+      "subperiod_sharpe": [
+        0.0,
+        1.12,
+        1.88,
+        -1.6,
+        0.54,
+        2.62
+      ],
+      "mean": 0.7592182330341982,
+      "std": 1.4839564602374231,
+      "cv": 1.9545848554068903,
+      "worst": -1.5976736532265192,
+      "best": 2.6180481275334415,
+      "frac_above_min": 0.6666666666666666,
+      "stable": false
+    },
+    "decay": {
+      "subperiod_sharpe": [
+        0.0,
+        1.12,
+        1.88,
+        -1.6,
+        0.54,
+        2.62
+      ],
+      "slope": 0.22525940235616318,
+      "first_half": 0.9980841726364106,
+      "second_half": 0.5203522934319859
+    },
+    "fng_quartile_sharpe": {
+      "fear": 0.5632222904171821,
+      "mid-fear": 1.5345223984935235,
+      "mid-greed": 0.7502051461040847,
+      "greed": 0.33624830077698153
+    }
+  },
+  "verdict": "FAIL",
+  "reasons": [
+    "DSR 0.16 < 0.95 at cumulative N=62 (selection bar sr0=1.35 ann)",
+    "history 3.0y < MinBTL 9.2y for N=62"
+  ],
+  "alt_verdict": "WEAK"
+}

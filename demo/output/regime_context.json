@@ -1,0 +1,69 @@
+{
+  "source": "cmc-rest",
+  "fear_greed": {
+    "value": 19,
+    "classification": "Extreme fear"
+  },
+  "top_by_volume": [
+    {
+      "symbol": "USDT",
+      "cmc_rank": 3,
+      "volume_24h": 57205717122.74879,
+      "pct_change_24h": 0.05212175
+    },
+    {
+      "symbol": "BTC",
+      "cmc_rank": 1,
+      "volume_24h": 24090311546.711887,
+      "pct_change_24h": 1.10530462
+    },
+    {
+      "symbol": "USDC",
+      "cmc_rank": 5,
+      "volume_24h": 10244506310.212717,
+      "pct_change_24h": -0.00592698
+    },
+    {
+      "symbol": "ETH",
+      "cmc_rank": 2,
+      "volume_24h": 8720998147.576109,
+      "pct_change_24h": 0.74692078
+    },
+    {
+      "symbol": "SOL",
+      "cmc_rank": 7,
+      "volume_24h": 2308579670.3798375,
+      "pct_change_24h": 1.65658056
+    },
+    {
+      "symbol": "XRP",
+      "cmc_rank": 6,
+      "volume_24h": 1322123499.2907994,
+      "pct_change_24h": 0.65517732
+    },
+    {
+      "symbol": "DOGE",
+      "cmc_rank": 10,
+      "volume_24h": 1139605502.448927,
+      "pct_change_24h": 1.57239349
+    },
+    {
+      "symbol": "BNB",
+      "cmc_rank": 4,
+      "volume_24h": 988111584.4761945,
+      "pct_change_24h": 0.79831382
+    },
+    {
+      "symbol": "HYPE",
+      "cmc_rank": 9,
+      "volume_24h": 797649698.4878863,
+      "pct_change_24h": 2.77158546
+    },
+    {
+      "symbol": "TRX",
+      "cmc_rank": 8,
+      "volume_24h": 433386723.8184889,
+      "pct_change_24h": 0.86766636
+    }
+  ]
+}

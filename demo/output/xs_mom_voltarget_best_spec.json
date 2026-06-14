@@ -1,0 +1,38 @@
+{
+  "name": "xs_mom_voltarget__window=14_k=3",
+  "hypothesis": "Cross-sectional momentum among BNB-ecosystem tokens persists via attention/flow autocorrelation; a ~40%-annual-vol target delevers in turbulence to cap crash beta. Refuted if the managed book does not stay positive out-of-sample after cost stress and trial deflation.",
+  "signals": [
+    {
+      "id": "mom",
+      "fn": "ts_momentum",
+      "args": {
+        "window": 14
+      }
+    }
+  ],
+  "portfolio": {
+    "type": "xs_topk",
+    "score": "mom",
+    "k": 3,
+    "direction": "long",
+    "rebalance": "W-MON",
+    "vol_target": 0.4,
+    "vol_lookback": 20,
+    "max_leverage": 3.0
+  },
+  "universe": {
+    "filter": "tradeable",
+    "min_history_days": 200
+  },
+  "bar": "1d",
+  "costs": {
+    "fee_bps": 10.0,
+    "slippage_bps": 5.0
+  },
+  "params_grid": {},
+  "falsification": {
+    "min_dsr": 0.95,
+    "n_trials_policy": "cumulative_ledger"
+  },
+  "version": 1
+}

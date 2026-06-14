@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.secret
+.ipynb_checkpoints/
+data/*.csv
+data/*.parquet
+data/cache/
+*.egg-info/
+dist/
+build/
+data/*.log
